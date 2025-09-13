@@ -27,7 +27,7 @@
 		EE9DC5D72E75EB190072C43B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9DC5D62E75EB190072C43B /* CoreDataManager.swift */; };
 		EED1683C2E749CB100938772 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1683B2E749CB100938772 /* AppDelegate.swift */; };
 		EED1683E2E749CB100938772 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1683D2E749CB100938772 /* SceneDelegate.swift */; };
-		EED168402E749CB100938772 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1683F2E749CB100938772 /* ViewController.swift */; };
+		EED168402E749CB100938772 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED1683F2E749CB100938772 /* DashboardViewController.swift */; };
 		EED168432E749CB100938772 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EED168422E749CB100938772 /* Base */; };
 		EED168482E749CB300938772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED168472E749CB300938772 /* Assets.xcassets */; };
 		EED1684B2E749CB300938772 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EED1684A2E749CB300938772 /* Base */; };
@@ -74,7 +74,7 @@
 		EED168382E749CB100938772 /* ReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED1683B2E749CB100938772 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED1683D2E749CB100938772 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EED1683F2E749CB100938772 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EED1683F2E749CB100938772 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		EED168422E749CB100938772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EED168472E749CB300938772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED1684A2E749CB300938772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -208,7 +208,8 @@
 				EE9DC5D22E75E6D50072C43B /* Core Data */,
 				EE9DC5B92E74C3C30072C43B /* Read Articles */,
 				EED1686E2E749CD500938772 /* AppFiles */,
-				EED1683F2E749CB100938772 /* ViewController.swift */,
+				EED1683F2E749CB100938772 /* DashboardViewController.swift */,
+				EE9DC5CB2E75C3C50072C43B /* NetworkManager.swift */,
 				EED168412E749CB100938772 /* Main.storyboard */,
 				EED168472E749CB300938772 /* Assets.xcassets */,
 				EED1684C2E749CB300938772 /* Info.plist */,
@@ -237,7 +238,6 @@
 		EED1686E2E749CD500938772 /* AppFiles */ = {
 			isa = PBXGroup;
 			children = (
-				EE9DC5CB2E75C3C50072C43B /* NetworkManager.swift */,
 				EED1683B2E749CB100938772 /* AppDelegate.swift */,
 				EED1683D2E749CB100938772 /* SceneDelegate.swift */,
 				EED168492E749CB300938772 /* LaunchScreen.storyboard */,
@@ -394,7 +394,7 @@
 				EE9DC5D72E75EB190072C43B /* CoreDataManager.swift in Sources */,
 				EE9DC5C42E75BE980072C43B /* ArticlesViewModel.swift in Sources */,
 				EE9DC5D12E75D0830072C43B /* MenuCollectionCell.swift in Sources */,
-				EED168402E749CB100938772 /* ViewController.swift in Sources */,
+				EED168402E749CB100938772 /* DashboardViewController.swift in Sources */,
 				EE9DC5BB2E74C4340072C43B /* ArticlesModel.swift in Sources */,
 				EE9DC5A92E74B1030072C43B /* SavedArticalesViewController.swift in Sources */,
 				EED1683C2E749CB100938772 /* AppDelegate.swift in Sources */,

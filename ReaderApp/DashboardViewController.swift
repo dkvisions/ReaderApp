@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DashboardViewController.swift
 //  ReaderApp
 //
 //  Created by Rahul on 12/09/25.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DashboardViewController: UIViewController {
 
     @IBOutlet weak var buttonHome: UIButton!
     @IBOutlet weak var buttonBookmark: UIButton!
