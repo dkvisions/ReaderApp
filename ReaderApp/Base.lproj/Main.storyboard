@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CAB-au-W80">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReaderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YPo-zH-gtH">
+                                <rect key="frame" x="240.66666666666663" y="103" width="136.33333333333337" height="19.333333333333329"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG3-TT-bEj">
+                                        <rect key="frame" x="0.0" y="0.0" width="79.333333333333329" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iY5-i2-xQz">
+                                        <rect key="frame" x="87.333333333333343" y="0.0" width="51" height="19.333333333333332"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KZ4-Ta-dbT">
+                                <rect key="frame" x="0.0" y="127.33333333333331" width="393" height="690.66666666666674"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSS-Pb-DoA">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="628.66666666666663"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5K-7U-mJU">
+                                        <rect key="frame" x="0.0" y="640.66666666666663" width="393" height="50"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YS2-cn-cNj">
+                                                <rect key="frame" x="20" y="0.0" width="353" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSt-dE-H7U" userLabel="Home">
+                                                        <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="50"/>
+                                                        <color key="backgroundColor" name="BlueWhite"/>
+                                                        <color key="tintColor" name="WhiteBlue"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                                                        <state key="normal" title="Articles " image="house" catalog="system">
+                                                            <color key="titleColor" name="WhiteBlue"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5v-yo-E4L">
+                                                        <rect key="frame" x="181.66666666666663" y="0.0" width="171.33333333333337" height="50"/>
+                                                        <color key="backgroundColor" name="BlueWhite"/>
+                                                        <color key="tintColor" name="WhiteBlue"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                                                        <state key="normal" title="Saved " image="bookmark" catalog="system">
+                                                            <color key="titleColor" name="WhiteBlue"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="YS2-cn-cNj" secondAttribute="trailing" constant="20" id="2si-9n-PbQ"/>
+                                            <constraint firstItem="YS2-cn-cNj" firstAttribute="leading" secondItem="y5K-7U-mJU" secondAttribute="leading" constant="20" id="85N-8J-rKs"/>
+                                            <constraint firstAttribute="bottom" secondItem="YS2-cn-cNj" secondAttribute="bottom" id="DxU-Pu-aRe"/>
+                                            <constraint firstAttribute="height" constant="50" id="d1M-RH-IYg"/>
+                                            <constraint firstItem="YS2-cn-cNj" firstAttribute="top" secondItem="y5K-7U-mJU" secondAttribute="top" id="whe-wf-5Y4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KZ4-Ta-dbT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CSe-Q2-cT2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YPo-zH-gtH" secondAttribute="trailing" constant="16" id="LPH-2m-VhA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KZ4-Ta-dbT" secondAttribute="bottom" id="MS8-yL-XPD"/>
+                            <constraint firstItem="YPo-zH-gtH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hwj-6R-Cv9"/>
+                            <constraint firstItem="KZ4-Ta-dbT" firstAttribute="top" secondItem="YPo-zH-gtH" secondAttribute="bottom" constant="5" id="oeD-JD-0hV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KZ4-Ta-dbT" secondAttribute="trailing" id="pMI-09-b3j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jnu-97-qUx"/>
+                    <connections>
+                        <outlet property="buttonBookmark" destination="F5v-yo-E4L" id="2aL-SM-IRI"/>
+                        <outlet property="buttonDarkModeSwitch" destination="iY5-i2-xQz" id="eiL-vR-QUC"/>
+                        <outlet property="buttonHome" destination="pSt-dE-H7U" id="DgQ-hR-qxy"/>
+                        <outlet property="viewContainer" destination="nSS-Pb-DoA" id="tUb-id-QFM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qFd-CQ-ibg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CAB-au-W80" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TFh-38-Jkq">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hUw-8d-vBZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3bN-pp-JnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <namedColor name="BlueWhite">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WhiteBlue">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

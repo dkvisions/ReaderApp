@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="MenuCollectionCell" id="gTV-IL-0wX" customClass="MenuCollectionCell" customModule="ReaderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="54"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fg-Qu-h7z">
+                        <rect key="frame" x="0.0" y="0.0" width="163" height="54"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMH-Fc-sED">
+                                <rect key="frame" x="0.0" y="0.0" width="163" height="54"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWY-aa-vWA">
+                                        <rect key="frame" x="5" y="0.0" width="153" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="WhiteBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BlueWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lWY-aa-vWA" firstAttribute="top" secondItem="MMH-Fc-sED" secondAttribute="top" id="7BW-yT-KoL"/>
+                                    <constraint firstAttribute="trailing" secondItem="lWY-aa-vWA" secondAttribute="trailing" constant="5" id="AFM-mn-uHC"/>
+                                    <constraint firstAttribute="bottom" secondItem="lWY-aa-vWA" secondAttribute="bottom" id="ZYt-j3-Q3L"/>
+                                    <constraint firstItem="lWY-aa-vWA" firstAttribute="leading" secondItem="MMH-Fc-sED" secondAttribute="leading" constant="5" id="nYS-Fn-7L5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MMH-Fc-sED" firstAttribute="leading" secondItem="8fg-Qu-h7z" secondAttribute="leading" id="Hfs-h8-Xzu"/>
+                            <constraint firstItem="MMH-Fc-sED" firstAttribute="top" secondItem="8fg-Qu-h7z" secondAttribute="top" id="NDe-wh-kmf"/>
+                            <constraint firstAttribute="trailing" secondItem="MMH-Fc-sED" secondAttribute="trailing" id="of6-Rj-0zw"/>
+                            <constraint firstAttribute="bottom" secondItem="MMH-Fc-sED" secondAttribute="bottom" id="rwl-kx-2wV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="8fg-Qu-h7z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0EG-8G-kp3"/>
+                <constraint firstAttribute="bottom" secondItem="8fg-Qu-h7z" secondAttribute="bottom" id="AKl-ge-RuK"/>
+                <constraint firstAttribute="trailing" secondItem="8fg-Qu-h7z" secondAttribute="trailing" id="Lmg-MB-idI"/>
+                <constraint firstItem="8fg-Qu-h7z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aZk-wx-Idn"/>
+            </constraints>
+            <size key="customSize" width="163" height="54"/>
+            <connections>
+                <outlet property="labelMenu" destination="lWY-aa-vWA" id="N9W-Wa-9sD"/>
+                <outlet property="viewContainer" destination="MMH-Fc-sED" id="yYE-DQ-2hx"/>
+            </connections>
+            <point key="canvasLocation" x="29.770992366412212" y="21.126760563380284"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BlueWhite">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WhiteBlue">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

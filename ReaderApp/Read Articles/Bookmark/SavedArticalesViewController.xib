@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SavedArticalesViewController" customModule="ReaderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="labelNoRecords" destination="vP4-5A-3Xd" id="eYY-c9-WRr"/>
+                <outlet property="tableViewArticles" destination="8kv-Bl-o5Q" id="9rZ-Ba-Z0a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8kv-Bl-o5Q">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP4-5A-3Xd">
+                    <rect key="frame" x="56" y="397.33333333333331" width="281" height="57.333333333333314"/>
+                    <string key="text">Note:-
+You haven’t saved any bookmarks yet. 
+Please add one to see it here.</string>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                    <color key="textColor" name="BlueOrrange"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" systemColor="systemGrayColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8kv-Bl-o5Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3aP-uL-Wwj"/>
+                <constraint firstItem="8kv-Bl-o5Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gep-wu-smh"/>
+                <constraint firstItem="vP4-5A-3Xd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="K8b-ib-Zp5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8kv-Bl-o5Q" secondAttribute="bottom" id="Vds-k6-zXB"/>
+                <constraint firstItem="vP4-5A-3Xd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="kEj-bK-fwY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8kv-Bl-o5Q" secondAttribute="trailing" id="mEd-Ti-H4N"/>
+            </constraints>
+            <point key="canvasLocation" x="2" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BlueOrrange">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
