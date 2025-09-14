@@ -69,7 +69,7 @@ class CoreDataManager {
                 existing.urlToImage = article.urlToImage
                 existing.content = article.content
                 existing.sourceID = article.source?.id
-                // ⚠️ Do NOT reset isBookMark (keep user choice)
+                // NOT reset isBookMark (keep user choice)
             } else {
                 // ➕ Insert new article
                 let entity = ArticleEntity(context: context)
@@ -214,7 +214,7 @@ class CoreDataManager {
             let results = try context.fetch(fetchRequest)
             
             if let entityToUpdate = results.first {
-                // 🔄 Update existing article (but keep isBookMark unless user toggled)
+                // Update existing article (but keep isBookMark unless user toggled)
                 entityToUpdate.name = newArticle.source?.name
                 entityToUpdate.author = newArticle.author
                 entityToUpdate.title = newArticle.title
@@ -224,13 +224,13 @@ class CoreDataManager {
                 entityToUpdate.content = newArticle.content
                 entityToUpdate.sourceID = newArticle.source?.id
                 
-                // ⚠️ Only update bookmark if explicitly set in newArticle
+                // Only update bookmark if explicitly set in newArticle
                 if let isBookMark = newArticle.isBookMark {
                     entityToUpdate.isBookMark = isBookMark
                 }
                 
             } else {
-                // ➕ Insert new article
+                // Insert new article
                 let entity = ArticleEntity(context: context)
                 entity.name = newArticle.source?.name
                 entity.author = newArticle.author
@@ -247,7 +247,7 @@ class CoreDataManager {
             CoreDataManager.shared.saveContext()
             
         } catch {
-            print("❌ Failed to upsert article: \(error)")
+            print("Failed to upsert article: \(error)")
         }
     }
 
